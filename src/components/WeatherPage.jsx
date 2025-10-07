@@ -108,7 +108,7 @@ const WeatherPage = () => {
         {forecastData!==null&& Object.keys(forecastData).length > 0 && (
           <div className="mt-8">
             <h2 className="text-2xl font-semibold text-white mb-4 drop-shadow-md">5-Day Outlook</h2>
-            <div className="d-flex space-x-3 overflow-x-auto pb-2">
+            <div className="d-flex space-x-3 overflow-x-auto p-5">
               {forecastData.list.map((item, index) => (
                 <ForecastDay key={index} data={item} unit={unit} />
               ))}
